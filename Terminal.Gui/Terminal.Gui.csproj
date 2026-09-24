@@ -78,6 +78,7 @@
       <!-- GitVersion.MsBuild automatically sets Version, AssemblyVersion, FileVersion, -->
       <!-- and InformationalVersion from git history + GitVersion.yml at build time. -->
       <PackageReference Include="GitVersion.MsBuild" PrivateAssets="all" />
+      <PackageReference Include="Microsoft.Build.Tasks.Git" PrivateAssets="all" />
     </ItemGroup>
     <!-- =================================================================== -->
     <!-- Global Usings and Type Aliases -->

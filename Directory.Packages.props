@@ -53,6 +53,11 @@
     <PackageVersion Include="ReportGenerator" Version="5.5.9" />
     <PackageVersion Include="coverlet.collector" Version="10.0.0" />
     <PackageVersion Include="GitVersion.MsBuild" Version="6.8.2" />
+    <!-- GitVersion.MsBuild 6.8.2 - the newest there is - reaches Microsoft.Build.Tasks.Git 10.0.203
+         through SourceLink, and that carries CVE-2026-62900 (GHSA-23fw-v26w-5fgq). The 10.0.2xx line
+         has no patched build, so the pin moves to the line that does. Build-time only: it stamps a
+         version into the assembly and ships in nothing. -->
+    <PackageVersion Include="Microsoft.Build.Tasks.Git" Version="10.0.401" />
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <PackageVersion Include="Terminal.Gui" Version="2.0.0" />

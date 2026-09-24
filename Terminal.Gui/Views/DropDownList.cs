@@ -531,7 +531,7 @@ public class DropDownList : TextField
     }
 
     /// <summary>
-    ///     Gets the index of the currently selected item based on the current <see cref="TextField.Text"/>.
+    ///     Gets the index of the currently selected item based on the current <see cref="View.Text"/>.
     /// </summary>
     private int? GetCurrentSelectedIndex ()
     {
@@ -554,7 +554,7 @@ public class DropDownList : TextField
     }
 
     /// <summary>
-    ///     Selects the item at the specified index, updating <see cref="TextField.Text"/>.
+    ///     Selects the item at the specified index, updating <see cref="View.Text"/>.
     /// </summary>
     private void SelectItemAtIndex (int index)
     {
